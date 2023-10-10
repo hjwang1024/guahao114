@@ -1,0 +1,58 @@
+# https://www.114yygh.com/    114网址
+
+# 登录后在cookie中查
+"cmi-user-ticket": ""
+
+# 手机号码
+phoneNumber: ""
+
+# date: 挂号日期,如填写latest自动挂最新一天
+date: "latest" # "2023-10-15"
+
+# hospitalId: 医院id
+hospitalId: "H01110003"
+
+# 科室id
+firstDeptCode: "T007"
+secondDeptCode: "133"
+
+# 需要挂早上的号请填写1  需要挂下午的号请填写2  上下午均可填写0
+timePeriod:
+  - "MORNING"
+  - "AFTERNOON"
+#  ["MORNING","AFTERNOON"]
+period:
+
+
+# patientName: 患者姓名
+# 若是自己挂号可为空
+patientName: ""
+
+cardType: "SOCIAL_SECURITY" #就诊卡类型，社保卡
+
+# 就诊卡号
+hospitalCardId: ""
+
+# 医保卡号
+medicareCardId: ""
+
+# doctorName: 医生姓名
+# 不填写的话默认选最好的医生
+# 填写后若这个医生没有号，会自动选其余号中最好的医生
+doctorName:
+  -
+
+# 指定医生
+# false:默认不指定
+# true:只挂指定医生的号
+assign: "false"
+
+
+# chooseBest: 选择模式
+# 不填写的默认从最好的医生开始选择
+# 可选项为"yes" 或者 "no"
+chooseBest: "no"
+
+# DebugLevel: 调试等级
+# 支持的调试等级有 debug/info/warning/error/critical
+DebugLevel: "debug"
