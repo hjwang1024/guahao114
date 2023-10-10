@@ -26,3 +26,5 @@
    ![hospitalId](./images/image2.png)
    - 以`协和医院-内科-内科门诊`为例，`hospitalId=H01110003，firstDeptCode=T007，secondDeptCode=133`
 
+## Thanks
+- 感谢大佬[AndyXiaoyu](https://github.com/AndyXiaoyu/beijingguahao)的开源仓库，本项目据此修改完成
