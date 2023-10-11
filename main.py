@@ -247,7 +247,7 @@ class Guahao(object):
             appoint_day = data['data']['bookingRange']
             today = datetime.date.today()
             # 优先确认最新可挂号日期
-            self.stop_date = today + datetime.timedelta(days=int(appoint_day))
+            self.stop_date = today + datetime.timedelta(days=int(appoint_day-1))
             logging.info("今日可挂号到: " + self.stop_date.strftime("%Y-%m-%d"))
             # 自动挂最新一天的号
             if self.config.date == 'latest':
@@ -256,7 +256,7 @@ class Guahao(object):
             # 生成放号时间和程序开始时间
             con_data_str = self.config.date + " " + refresh_time + ":00"
             self.start_time = datetime.datetime.strptime(con_data_str, '%Y-%m-%d %H:%M:%S') + datetime.timedelta(
-                days=-int(appoint_day))
+                days=1-int(appoint_day))
             logging.info("放号时间: " + self.start_time.strftime("%Y-%m-%d %H:%M"))
 
 
